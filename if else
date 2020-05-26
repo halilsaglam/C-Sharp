@@ -1,0 +1,23 @@
+namespace Console_Test_2
+{
+    class Program
+    {  
+        static void Main(string[] args)
+        {            
+                      int gelenveri;
+            Console.WriteLine("Bİr sayı girin");
+            gelenveri = Convert.ToInt32(Console.ReadLine());
+            if (gelenveri > 10)
+                Console.WriteLine("veri 10 dan büyük");
+            if (gelenveri < 15)
+                Console.WriteLine("15 ten küçük");
+            if (gelenveri == 15)
+                Console.WriteLine("veri 15 ten küçük");
+            else if (gelenveri == 12)
+            {
+                Console.WriteLine("veri 12");
+            }
+        Console.ReadLine();
+        }
+    }
+}
