@@ -1,0 +1,28 @@
+  
+namespace Console_Test_2
+{
+    class Program
+    {  
+        static void Main(string[] args)
+        {            
+                      int sayi;
+            basla:
+            Console.WriteLine("sayi girin");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            switch (sayi)
+            {
+                case 1:
+                    Console.WriteLine("sayı 1 dir");
+                    break;
+                case 2:
+                    Console.WriteLine("sayı 2dir");
+                    break;
+                default:
+                    Console.WriteLine("sayı 1 veya 2 değildir");
+                    goto basla;
+                    break;
+            }
+        Console.ReadLine();
+        }
+    }
+}
