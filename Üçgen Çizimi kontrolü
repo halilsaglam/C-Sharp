@@ -1,0 +1,84 @@
+namespace Console_Test_2
+{
+    class Program
+    {  
+        static void Main(string[] args)
+        {            
+            int step = 1;
+            int girilensayisayisi = 7;
+            int[] sayidizisi = new int[girilensayisayisi];
+            Console.WriteLine("Lütfen bir üçgenin 3 kenar sayısını girin :");
+            sayidizisi[0] = Convert.ToInt32(Console.ReadLine());
+            sayidizisi[1] = Convert.ToInt32(Console.ReadLine());
+            sayidizisi[2] = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < girilensayisayisi; i++)
+            {
+                switch (step)
+                {
+                    case 1:
+                        if(sayidizisi[0] + sayidizisi[1] > sayidizisi[2])
+                            {
+                                step = 2;
+                            }
+                        else
+                            step = 0;
+                        break;
+
+                    case 2:
+                        if (sayidizisi[0] + sayidizisi[2] > sayidizisi[1])
+                            {
+                                step = 3;
+                            }
+                        else
+                            step = 0;
+                        break;
+
+                    case 3:
+                        if (sayidizisi[1] + sayidizisi[2] > sayidizisi[0])
+                            {
+                                step = 4;
+                            }
+                        else
+                            step = 0;
+                        break;
+
+                    case 4:
+                        if (Math.Abs(sayidizisi[0] - sayidizisi[1]) < sayidizisi[2])
+                            {
+                                step = 5;
+                            }
+                        else
+                            step = 0;
+                        break;
+
+                    case 5:
+                        if (Math.Abs(sayidizisi[1] - sayidizisi[2]) < sayidizisi[0])
+                            {
+                                step = 6;
+                            }
+                        else
+                            step = 0;
+                        break;
+
+                    case 6:
+                        if (Math.Abs(sayidizisi[0] - sayidizisi[2]) < sayidizisi[1])
+                            {
+                                step = 7;
+                            }
+                        else
+                            step = 0;
+                        break;
+
+                    case 7:
+                        Console.WriteLine("üçgen olabilir");
+                        break;
+                    default:
+                        Console.WriteLine("Üçgen olamaz !!");
+                        break;
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
