@@ -1,0 +1,17 @@
+namespace Console_Test_2
+{
+    class Program
+    {  
+        static void Main(string[] args)
+        {
+            //----------------Kullanıcıdan girilen string sayıları toplayan program ----------------------------
+            int sayison;
+
+            string sayi1 = "3";
+            string sayi2 = "9";
+
+            sayison = Convert.ToInt32(sayi1) + Convert.ToInt32(sayi2);
+            Console.WriteLine(sayison);
+         }
+     }
+}     
