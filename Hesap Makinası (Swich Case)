@@ -1,1 +1,26 @@
+            int sayi1, sayi2;
+            Console.WriteLine("1. Sayi giriniz");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("2. Sayi giriniz");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("işelm seciniz..+ - / *");
+            string islem = Console.ReadLine();
+
+            switch (islem)
+            {
+                case "+":
+                    Console.WriteLine("iki sayının toplmı : " + (sayi1 + sayi2));
+                    break;
+                case "-":
+                    Console.WriteLine("iki sayının farkı : " + (sayi1 - sayi2 ));
+                    break;
+                case "/":
+                    Console.WriteLine("iki sayının çarpımı :" + (sayi1 / sayi2));
+                    break;
+                case "*":
+                    Console.WriteLine("iki sayını çarpımı : " + (sayi1 * sayi2));
+                    break;
+                default:
+                    break;
+            }
