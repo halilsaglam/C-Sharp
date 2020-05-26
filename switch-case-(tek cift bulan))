@@ -1,0 +1,29 @@
+namespace Console_Test_2
+{
+    class Program
+    {  
+        static void Main(string[] args)
+        {            
+            int sayi, sonuc;
+            basla:
+            Console.WriteLine("sayi girin");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            sonuc = sayi % 2;
+            Console.WriteLine(sonuc);
+            switch (sonuc)
+            {
+                case 1:
+                    Console.WriteLine("sayı Tektir");
+                    goto basla;
+                case 0:
+                    Console.WriteLine("sayı Çiftir");
+                    goto basla;
+
+                default:
+                    goto basla;
+                    break;
+            }
+        Console.ReadLine();
+        }
+    }
+}
