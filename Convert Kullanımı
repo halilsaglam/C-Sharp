@@ -1,0 +1,29 @@
+namespace Console_Test_2
+{
+    class Program
+    {  
+        static void Main(string[] args)
+        {            
+            string stringampulsayisi, stringharcadigiwatt;
+            int ampulsayisi, harcadigiwatt, normalfatura;
+            float tasarruffaturasi;
+
+            Console.WriteLine("Ampul sayısı :");
+            stringampulsayisi = Console.ReadLine();
+            ampulsayisi = Convert.ToInt32(stringampulsayisi);
+            Console.WriteLine("Harcadığı watt :");
+            stringharcadigiwatt = Console.ReadLine();
+            harcadigiwatt = Convert.ToInt32(stringharcadigiwatt);
+
+            normalfatura = ampulsayisi * harcadigiwatt;
+            tasarruffaturasi = normalfatura - (((normalfatura) * 20) / 100);
+
+            Console.WriteLine("Normal fatura : ");
+            Console.WriteLine(normalfatura);
+            Console.WriteLine("Tasarruf Faturası : ");
+            Console.WriteLine(tasarruffaturasi);
+ Console.ReadLine();
+        }
+    }
+}
+            
