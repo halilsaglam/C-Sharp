@@ -1,0 +1,5 @@
+            int [] sayilar = new int [] {1,2,45,78,20 };
+            foreach (int sayi in sayilar)
+            {
+                Console.WriteLine("Dizi elemanları : " + sayi);
+            }
