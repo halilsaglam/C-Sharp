@@ -1,0 +1,36 @@
+namespace Console_Test_2
+{
+    class Program
+    {  
+        static void Main(string[] args)
+        {            
+            int kücüksayi;
+            int girilensayisayisi = 7;
+            int[] sayidizisi = new int[girilensayisayisi];
+            
+            tekrar:
+            Console.WriteLine("Lütfen 7 sayı girin :");
+            sayidizisi[0] = Convert.ToInt32(Console.ReadLine());
+            sayidizisi[1] = Convert.ToInt32(Console.ReadLine());
+            sayidizisi[2] = Convert.ToInt32(Console.ReadLine());
+            sayidizisi[3] = Convert.ToInt32(Console.ReadLine());
+            sayidizisi[4] = Convert.ToInt32(Console.ReadLine());
+            sayidizisi[5] = Convert.ToInt32(Console.ReadLine());
+            sayidizisi[6] = Convert.ToInt32(Console.ReadLine());
+
+            kücüksayi = sayidizisi[0];
+
+            for (int i = 0; i < girilensayisayisi ; i++)
+            {
+                if (kücüksayi >= sayidizisi[i])
+                    {
+                        kücüksayi = sayidizisi[i];
+                    }
+            }
+            Console.WriteLine("Küçük Sayı : ");
+            Console.WriteLine(kücüksayi);
+            goto tekrar;
+        Console.ReadLine();
+        }
+    }
+}
